@@ -1,4 +1,6 @@
-﻿namespace G_NET_33_ADV01;
+﻿using System.Numerics;
+
+namespace G_NET_33_ADV01;
 
 internal class Program
 {
@@ -66,8 +68,22 @@ internal class Program
         */
    
    
-   
+        // Q5: Write a generic method FindMax<T> that finds maximum value
+        /*
+        
+        public static T FindMax<T>(T a, T b) where T : IComparable<T>
+            {
+                return a.CompareTo(b) > 0 ? a : b;
+            }
+        public static T FindMax<T>(T a, T b) where T : INumber<T>
+            {
+                return a > b ? a : b;
+            }
+        
+        
+        */
    
    
     }
+    
 }
