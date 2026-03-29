@@ -49,7 +49,21 @@ internal class Program
         
         */
 
-   
+    
+        // Q4: How to constrain type parameters in generics? Give an example.
+        /*
+        
+            A generic method is a method that works with any data type using a type parameter.
+
+            public static void Swap<T>(ref T a, ref T b)
+            {
+                T temp = a;
+                a = b;
+                b = temp;
+            }
+        
+        
+        */
    
    
    
