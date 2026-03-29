@@ -82,7 +82,24 @@ internal class Program
         
         
         */
-   
+
+
+
+        // Q6: What is a generic interface? Write IRepository<T>.
+
+        /*
+        
+        A generic interface works with any type.
+        public interface IRepository<T>
+        {
+            void Add(T item);
+            void Remove(T item);
+            IEnumerable<T> GetAll();
+        }
+        
+        */
+
+       
    
     }
     
