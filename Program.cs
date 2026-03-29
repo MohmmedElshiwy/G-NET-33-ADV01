@@ -128,6 +128,20 @@ internal class Program
             public T Value;
         }
         */
+
+
+        
+        // Q9: What is the 'new()' constraint? Write an example.
+
+        /*
+        
+        Requires a parameterless constructor.
+
+        public class Factory<T> where T : new()
+        {
+            public T Create() => new T();
+        }
+        */
     }
     
 }
