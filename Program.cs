@@ -104,11 +104,29 @@ internal class Program
 
         /*
         
+        
+        Requires a Value type.
+
+
         public class MyClass<T> where T : struct
         {
             public T Value { get; set; }
         }
         
+        */
+
+
+        // Q8: What is the 'class' constraint? Write an example.
+
+        /*
+        
+        
+        Requires a reference type.
+
+        public class Example<T> where T : class
+        {
+            public T Value;
+        }
         */
     }
     
