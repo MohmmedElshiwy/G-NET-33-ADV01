@@ -100,7 +100,16 @@ internal class Program
         */
 
        
-   
+     //Q7: What is the 'struct' constraint? Write an example.
+
+        /*
+        
+        public class MyClass<T> where T : struct
+        {
+            public T Value { get; set; }
+        }
+        
+        */
     }
     
 }
