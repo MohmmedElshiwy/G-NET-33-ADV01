@@ -15,7 +15,22 @@ internal class Program
 
        
    
-    
+     // Q2: Write a generic class Container<T> with Add and Get methods.
+
+        /*
+        
+        public class GenericClass<T>
+        {
+        
+            private T Value;
+
+            public void Add (T vlaue) => Value = vlaue;
+            public T Get() => Value;
+        }
+        
+        
+        */
+
    
    
    
