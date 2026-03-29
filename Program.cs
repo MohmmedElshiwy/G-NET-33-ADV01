@@ -31,6 +31,25 @@ internal class Program
         
         */
 
+
+        // Q3:What are multiple type parameters? Write Pair<TKey, TValue>.
+
+        /*
+        
+            Multiple Type Parameters Allow Us To Define A Generic Class Or Method That Can Work With More Than One Type. This Is Useful When We Need To Associate Two Or More Types Together.
+
+        
+          public class Pair<TKey, TValue>(TKey key, TValue value)
+            {
+                public TKey Key{get; init;}= key;
+                public TValue Value{get;init;} = value;
+
+         
+            }        
+        
+        */
+
+   
    
    
    
