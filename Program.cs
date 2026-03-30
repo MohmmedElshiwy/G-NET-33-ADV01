@@ -142,6 +142,26 @@ internal class Program
             public T Create() => new T();
         }
         */
+
+        // Q10:  What is the interface constraint? Write an example.
+        /*
+        
+        An interface constraint means that the generic type T must implement a specific interface.
+
+        public interface IPrintable
+        {
+            void Print();
+        }
+        
+        public class Printer<T> where T : IPrintable
+        {
+            public void PrintItem(T item)
+            {
+                item.Print();
+            }
+        }
+        
+        */
     }
     
 }
