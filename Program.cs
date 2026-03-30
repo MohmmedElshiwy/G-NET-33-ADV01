@@ -201,6 +201,23 @@ internal class Program
         
         
         */
+    
+    
+        // Q13: What does the 'default' keyword do in generics?
+
+        /*
+        
+        
+            Returns the default value of a type:
+
+            int => 0
+            bool => false
+            reference => null
+
+            T value = default;
+
+        
+        */
     }
     
 }
