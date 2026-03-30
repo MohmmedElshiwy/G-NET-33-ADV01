@@ -152,7 +152,7 @@ internal class Program
         {
             void Print();
         }
-        
+
         public class Printer<T> where T : IPrintable
         {
             public void PrintItem(T item)
@@ -162,6 +162,30 @@ internal class Program
         }
         
         */
+    
+    
+        // Q11: What is the base class constraint? Write an example.
+
+        /*
+        
+        It ensures that the generic type inherits from a specific base class.
+
+        public class Animal
+            {
+                public void Eat() => Console.WriteLine("Eating...");
+            }
+            
+            public class Zoo<T> where T : Animal
+            {
+                public void Feed(T animal)
+                {
+                    animal.Eat();
+                }
+            }
+        
+        
+        */
+    
     }
     
 }
