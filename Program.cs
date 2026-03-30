@@ -286,6 +286,17 @@ internal class Program
         
         */
    
+    
+        // Q17: What is the difference between covariance and contravariance?
+
+        /*
+        
+        covariance read => out 
+
+        contravariance  write => in
+
+         covariance allows you to use a more derived type where a base type is expected, while contravariance allows you to use a less derived type where a more derived type is expected.  
+        */
     }
     
 }
