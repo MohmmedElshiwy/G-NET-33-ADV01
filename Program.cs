@@ -225,17 +225,42 @@ internal class Program
         public class SafeList<T>
         {
             private List<T> items = new();
-        
+
             public void Add(T item) => items.Add(item);
-        
+
             public T Get(int index)
             {
                 if (index < 0 || index >= items.Count)
                     return default;
-        
+
                 return items[index];
             }
         }
+        */
+    
+    
+        // Q15: What is covariance? Explain the 'out' keyword.
+
+        /*
+        
+        Covariance allows you to use a more derived type where a base type is expected.
+        interface IProducer<out T>
+            {
+                T GetItem();
+            }
+            
+            class Animal {}
+            class Dog : Animal {}
+            
+            class DogProducer : IProducer<Dog>
+            {
+                public Dog GetItem() => new Dog();
+            }
+            IProducer<Dog> dogProducer = new DogProducer();
+            
+            
+            IProducer<Animal> animalProducer = dogProducer;
+        
         */
     }
     
