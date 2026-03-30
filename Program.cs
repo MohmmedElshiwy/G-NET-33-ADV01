@@ -297,6 +297,22 @@ internal class Program
 
          covariance allows you to use a more derived type where a base type is expected, while contravariance allows you to use a less derived type where a more derived type is expected.  
         */
-    }
+   
+
+        // Q18: How do static members work in generic types?
+        /*
+        
+        Static members in generic types are created separately for each closed generic type.        
+
+        MyClass<int> has its own static members
+        MyClass<string> has completely different static members
+        
+        They do NOT share the same static data.
+        
+        
+        */
+
+
+ }
     
 }
