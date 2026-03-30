@@ -174,7 +174,7 @@ internal class Program
             {
                 public void Eat() => Console.WriteLine("Eating...");
             }
-            
+
             public class Zoo<T> where T : Animal
             {
                 public void Feed(T animal)
@@ -186,6 +186,21 @@ internal class Program
         
         */
     
+    
+        // Q12: How do you apply multiple constraints? Write an example. 
+
+        /*
+        
+        public class Example<T> where T : class, IPrintable, new()
+            {
+                public T Create()
+                {
+                    return new T();
+                }
+            }
+        
+        
+        */
     }
     
 }
