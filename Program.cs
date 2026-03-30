@@ -218,6 +218,25 @@ internal class Program
 
         
         */
+    
+        // Q14: Write a SafeList<T> that returns default when the index is invalid.
+        /*
+        
+        public class SafeList<T>
+        {
+            private List<T> items = new();
+        
+            public void Add(T item) => items.Add(item);
+        
+            public T Get(int index)
+            {
+                if (index < 0 || index >= items.Count)
+                    return default;
+        
+                return items[index];
+            }
+        }
+        */
     }
     
 }
