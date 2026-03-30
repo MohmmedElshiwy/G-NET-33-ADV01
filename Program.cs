@@ -248,20 +248,44 @@ internal class Program
             {
                 T GetItem();
             }
-            
+
             class Animal {}
             class Dog : Animal {}
-            
+
             class DogProducer : IProducer<Dog>
             {
                 public Dog GetItem() => new Dog();
             }
             IProducer<Dog> dogProducer = new DogProducer();
-            
-            
+
+
             IProducer<Animal> animalProducer = dogProducer;
         
         */
+   
+        // Q16: What is contravariance? Explain the 'in' keyword.
+        /*
+        
+        Contravariance allows you to use a less derived type where a more derived type is expected.
+        interface IConsumer<in T>
+            {
+                void Consume(T item);
+            }
+
+            class Animal {}
+            class Dog : Animal {}
+
+            class AnimalConsumer : IConsumer<Animal>
+            {
+                public void Consume(Animal item) => Console.WriteLine("Consuming an animal");
+            }
+
+            IConsumer<Animal> animalConsumer = new AnimalConsumer();
+            IConsumer<Dog> dogConsumer = animalConsumer;
+        
+        
+        */
+   
     }
     
 }
