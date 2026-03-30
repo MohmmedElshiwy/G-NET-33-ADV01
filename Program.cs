@@ -306,13 +306,27 @@ internal class Program
 
         MyClass<int> has its own static members
         MyClass<string> has completely different static members
-        
+
         They do NOT share the same static data.
         
         
         */
 
+        // Q19: How can you inherit from a generic class?
+        /*
+        
+        
+            public class Base<T>
+            {
+                public T Value;
+            }       
+            public class Derived : Base<int>
+            {
+                public void PrintValue() => Console.WriteLine(Value);
+            }
 
+
+        */
  }
     
 }
